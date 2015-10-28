@@ -174,7 +174,6 @@ def main():
                 msg = 'Could not convert RPC response XML to string:  {0}'.format(str(err))
                 module.fail_json(msg=msg)
         results['ansible_facts']['rpc_results'] = { args['rpc'] : rpc_result }
-        #results['changed'] = True
         # no close, we're done after this point.
     # else:
     #     try:
